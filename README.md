@@ -1,0 +1,1 @@
+Não há nada para para você aqui!
