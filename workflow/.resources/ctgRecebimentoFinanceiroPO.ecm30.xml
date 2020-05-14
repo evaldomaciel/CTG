@@ -1,0 +1,1734 @@
+<list>
+  <ProcessDefinition>
+    <processDefinitionPK>
+      <companyId>1</companyId>
+      <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+    </processDefinitionPK>
+    <processDescription>Envio de Documento com PO / Document Delivery Request w/ PO</processDescription>
+    <instruction></instruction>
+    <active>true</active>
+    <publicProcess>true</publicProcess>
+    <volumeId>Default</volumeId>
+    <categoryId>Financeiro.Desenvolvimento</categoryId>
+    <managerEngineAllocationId>Grupo</managerEngineAllocationId>
+    <managerEngineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Group&gt;verIntegracao&lt;/Group&gt;&lt;/AssignmentController&gt;</managerEngineAllocationConfiguration>
+    <snapshotFrequency>0</snapshotFrequency>
+    <baseDay>0</baseDay>
+    <baseMonth>0</baseMonth>
+    <periodId>Sistema</periodId>
+    <uniqueCardVersion>false</uniqueCardVersion>
+    <keyWord></keyWord>
+    <complementsLevel>1</complementsLevel>
+    <notifyRequisitionerComplements>true</notifyRequisitionerComplements>
+    <notifyManagerComplements>false</notifyManagerComplements>
+    <deadlineTime>0</deadlineTime>
+    <warningDeadlineTime>0</warningDeadlineTime>
+    <notifyAuthorityComplements>true</notifyAuthorityComplements>
+  </ProcessDefinition>
+  <ProcessDefinitionVersion>
+    <processDefinitionVersionPK>
+      <companyId>1</companyId>
+      <processId>Envio de Documento com PO / Document Delivery Request w/ PO</processId>
+      <version>3</version>
+    </processDefinitionVersionPK>
+    <versionDescription>Nova Versão.</versionDescription>
+    <formId>129335</formId>
+    <editionMode>true</editionMode>
+    <updateAttachmentsVersion>false</updateAttachmentsVersion>
+    <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
+    <active>true</active>
+    <blockedVersion>false</blockedVersion>
+    <counterSign>false</counterSign>
+    <openInstances>0</openInstances>
+    <bpmnVersion>2</bpmnVersion>
+    <processStates/>
+    <favorito>false</favorito>
+    <inheritFormSecurity>false</inheritFormSecurity>
+    <mobileReady>false</mobileReady>
+  </ProcessDefinitionVersion>
+  <list>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </processStatePK>
+      <stateName>Início</stateName>
+      <stateDescription>Início</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Papel</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;ctgInsereRecebimento&lt;/Role&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>true</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>60</positionX>
+      <positionY>130</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>10</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>5</sequence>
+      </processStatePK>
+      <stateName>Processamento Central de Notas</stateName>
+      <stateDescription>Processamento Central de Notas</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Papel</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;ctgFinanceiroCPO&lt;/Role&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>860</positionX>
+      <positionY>187</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>16</sequence>
+      </processStatePK>
+      <stateName>Processamento Fiscal - Serviço</stateName>
+      <stateDescription>Processamento Fiscal - Serviço</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Papel</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;ctgFiscalComPO&lt;/Role&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>430</positionX>
+      <positionY>370</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>19</sequence>
+      </processStatePK>
+      <stateName>Verificar Negativa</stateName>
+      <stateDescription>Verificar Negativa</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;responsavelNegativa&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>740</positionX>
+      <positionY>7</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>31</sequence>
+      </processStatePK>
+      <stateName>Processamento Fiscal - Produto</stateName>
+      <stateDescription>Processamento Fiscal - Produto</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Pool Papel</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;ctgClassDifal&lt;/Role&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>430</positionX>
+      <positionY>290</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>39</sequence>
+      </processStatePK>
+      <stateName>Preencher Dados</stateName>
+      <stateDescription>Preencher Dados</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Campo Formulário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;FormField&gt;codResponsavel&lt;/FormField&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>210</positionX>
+      <positionY>20</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>50</sequence>
+      </processStatePK>
+      <stateName>Ajustar Informações</stateName>
+      <stateDescription>Ajustar Informações</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Executor Atividade</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;BaseActivity&gt;4&lt;/BaseActivity&gt;&lt;Returns&gt;Last&lt;/Returns&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>80</positionX>
+      <positionY>20</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>14</sequence>
+      </processStatePK>
+      <stateName>Serviço?</stateName>
+      <stateDescription>Serviço?</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>340</positionX>
+      <positionY>60</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>22</sequence>
+      </processStatePK>
+      <stateName>S/N</stateName>
+      <stateDescription>S/N</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>1030</positionX>
+      <positionY>185</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>27</sequence>
+      </processStatePK>
+      <stateName>S/N</stateName>
+      <stateDescription>S/N</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>620</positionX>
+      <positionY>370</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>33</sequence>
+      </processStatePK>
+      <stateName>S/N</stateName>
+      <stateDescription>S/N</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>620</positionX>
+      <positionY>292</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>37</sequence>
+      </processStatePK>
+      <stateName>Reverso</stateName>
+      <stateDescription>Reverso</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>180</positionX>
+      <positionY>180</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>41</sequence>
+      </processStatePK>
+      <stateName>Aceita</stateName>
+      <stateDescription>Aceita</stateDescription>
+      <joint>false</joint>
+      <initialState>false</initialState>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <automatic>true</automatic>
+      <positionX>290</positionX>
+      <positionY>228</positionY>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>1</stateType>
+      <bpmnType>120</bpmnType>
+      <signalId>0</signalId>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>9</sequence>
+      </processStatePK>
+      <stateName>Fim</stateName>
+      <stateDescription>Fim</stateDescription>
+      <instruction>Atividade final do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>true</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>1150</positionX>
+      <positionY>211</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>60</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+  </list>
+  <list>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>3</version>
+        <sequence>14</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&apos;rb_tipoPgmto&apos;)==&apos;serv&apos;</condition>
+      <destinationSequenceId>16</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>3</version>
+        <sequence>14</sequence>
+      </conditionProcessStatePK>
+      <condition>true</condition>
+      <destinationSequenceId>31</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>3</version>
+        <sequence>22</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&apos;rb_aprovaFinanceiro&apos;)==&apos;sim&apos;</condition>
+      <destinationSequenceId>9</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>3</version>
+        <sequence>22</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&apos;retornoFinOpt&apos;) == &apos;requisitante&apos;</condition>
+      <destinationSequenceId>19</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <expressionOrder>3</expressionOrder>
+        <version>3</version>
+        <sequence>22</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&apos;retornoFinOpt&apos;) == &apos;fiscal&apos;</condition>
+      <destinationSequenceId>14</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>3</version>
+        <sequence>27</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&apos;rb_aprovaFiscal&apos;)==&apos;nao&apos;</condition>
+      <destinationSequenceId>19</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>3</version>
+        <sequence>27</sequence>
+      </conditionProcessStatePK>
+      <condition>true</condition>
+      <destinationSequenceId>5</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>3</version>
+        <sequence>33</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&apos;rb_aprovaDifal&apos;)==&apos;sim&apos;</condition>
+      <destinationSequenceId>5</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>3</version>
+        <sequence>33</sequence>
+      </conditionProcessStatePK>
+      <condition>true</condition>
+      <destinationSequenceId>19</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>3</version>
+        <sequence>37</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&apos;rb_sentido&apos;)==&apos;normal&apos;</condition>
+      <destinationSequenceId>14</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>3</version>
+        <sequence>37</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&apos;rb_sentido&apos;)==&apos;reverso&apos;</condition>
+      <destinationSequenceId>39</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <expressionOrder>1</expressionOrder>
+        <version>3</version>
+        <sequence>41</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&apos;rb_acptSol&apos;)==&apos;nao&apos;</condition>
+      <destinationSequenceId>50</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+    <ConditionProcessState>
+      <conditionProcessStatePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <expressionOrder>2</expressionOrder>
+        <version>3</version>
+        <sequence>41</sequence>
+      </conditionProcessStatePK>
+      <condition>hAPI.getCardValue(&apos;rb_acptSol&apos;)==&apos;sim&apos;</condition>
+      <destinationSequenceId>14</destinationSequenceId>
+      <conditionType>0</conditionType>
+    </ConditionProcessState>
+  </list>
+  <list>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>17</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>14</initialStateSequence>
+      <finalStateSequence>16</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>S</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>21</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>19</initialStateSequence>
+      <finalStateSequence>14</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>23</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>5</initialStateSequence>
+      <finalStateSequence>22</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>24</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>22</initialStateSequence>
+      <finalStateSequence>9</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>26</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>22</initialStateSequence>
+      <finalStateSequence>19</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>28</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>16</initialStateSequence>
+      <finalStateSequence>27</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>29</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>27</initialStateSequence>
+      <finalStateSequence>19</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>30</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>27</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>32</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>14</initialStateSequence>
+      <finalStateSequence>31</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>N</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>34</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>31</initialStateSequence>
+      <finalStateSequence>33</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>35</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>33</initialStateSequence>
+      <finalStateSequence>19</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>36</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>33</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>38</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>37</initialStateSequence>
+      <finalStateSequence>14</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>N</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>40</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>37</initialStateSequence>
+      <finalStateSequence>39</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>s</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>42</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>39</initialStateSequence>
+      <finalStateSequence>41</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>43</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>41</initialStateSequence>
+      <finalStateSequence>14</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>s</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>48</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>37</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>51</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>41</initialStateSequence>
+      <finalStateSequence>50</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name>N</name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>52</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>50</initialStateSequence>
+      <finalStateSequence>37</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>53</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>22</initialStateSequence>
+      <finalStateSequence>14</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+  </list>
+  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeTaskSave</eventId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeTaskSave(colleagueId, nextSequenceId, userList) {&#xd;
+	var COD_solicitacao = getValue(&quot;WKNumProces&quot;);&#xd;
+	var aprovaFiscal = hAPI.getCardValue(&apos;rb_aprovaFiscal&apos;);&#xd;
+	var msgComent = hAPI.getCardValue(&apos;ObsFinanceiro&apos;);&#xd;
+	var msgFiscal = hAPI.getCardValue(&apos;ObsFiscalRet&apos;);&#xd;
+	&#xd;
+	if(aprovaFiscal==&apos;nao&apos;){&#xd;
+		msgComent = msgFiscal;&#xd;
+	}&#xd;
+	&#xd;
+	&#xd;
+	if(nextSequenceId==19){&#xd;
+		hAPI.setTaskComments(colleagueId, COD_solicitacao, 0,&quot;Favor Verificar: &quot;+ msgComent);&#xd;
+	}&#xd;
+	if(nextSequenceId==50){&#xd;
+		msgComent = hAPI.getCardValue(&apos;obsAcptSol&apos;);&#xd;
+		hAPI.setTaskComments(colleagueId, COD_solicitacao, 0,&quot;Favor Verificar: &quot;+ msgComent);&#xd;
+	}&#xd;
+	if(nextSequenceId==14){&#xd;
+&#xd;
+		var resp = &apos;&apos;;&#xd;
+		if(hAPI.getCardValue(&apos;rb_sentido&apos;)==&apos;reverso&apos;){&#xd;
+			resp= hAPI.getCardValue(&apos;codResponsavel&apos;)&#xd;
+			//atualiza responsavel&#xd;
+			var idUser = hAPI.getCardValue(&apos;codResponsavel&apos;);&#xd;
+			var nameUser = hAPI.getCardValue(&apos;cResponsavel&apos;);&#xd;
+			hAPI.setCardValue(&apos;idSolic&apos;,idUser);&#xd;
+			hAPI.setCardValue(&apos;NmSolic&apos;,nameUser);&#xd;
+		}&#xd;
+		else &#xd;
+			resp = hAPI.getCardValue(&apos;idSolic&apos;);	&#xd;
+&#xd;
+		hAPI.setCardValue(&apos;responsavelNegativa&apos;,resp);&#xd;
+		var attachments = hAPI.listAttachments();&#xd;
+	    var hasAttachment = false;&#xd;
+	    if(attachments.size()&gt;0){&#xd;
+	    	hasAttachment = true;&#xd;
+	    }	&#xd;
+	    if (!hasAttachment) {&#xd;
+	        throw i18n.translate(&quot;erroAnexos&quot;);&#xd;
+	    }&#xd;
+	}&#xd;
+	&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterTaskSave</eventId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterTaskSave(colleagueId,nextSequenceId,userList){&#xd;
+	if(nextSequenceId == 5){&#xd;
+		var url = &quot;http://ctgbr.fluig.com&quot;;&#xd;
+		var COD_solicitacao = getValue(&quot;WKNumProces&quot;);&#xd;
+		var user = getValue(&quot;WKUser&quot;);&#xd;
+		var empresa = getValue(&apos;WKCompany&apos;);&#xd;
+		var c1 = DatasetFactory.createConstraint(&quot;colleaguePK.colleagueId&quot;, user, user, ConstraintType.MUST);&#xd;
+		var colaboradorDS = DatasetFactory.getDataset(&quot;colleague&quot;, null, new Array(c1), null);&#xd;
+		var colaborador = colaboradorDS.getValue(0,&quot;colleagueName&quot;);&#xd;
+		var nPedidoCompra = hAPI.getCardValue(&apos;cOcCod&apos;);&#xd;
+		&#xd;
+		try{&#xd;
+		    //Monta mapa com par�metros do template&#xd;
+		    var parametros = new java.util.HashMap();&#xd;
+		    var conteudo  = i18n.translate(&quot;conteudo&quot;);&#xd;
+		    var conteudo2 = i18n.translate(&quot;conteudo.2&quot;);&#xd;
+		    conteudo = conteudo +&quot; &quot;+ nPedidoCompra +&quot; &quot; + conteudo2;&#xd;
+		    parametros.put(&quot;RECEIVER&quot;, colaborador);&#xd;
+		    parametros.put(&quot;EVENT&quot;, conteudo);&#xd;
+		    parametros.put(&quot;SERVER_URL&quot;, url);&#xd;
+		    parametros.put(&quot;TENANT_ID&quot;, empresa); &#xd;
+		    parametros.put(&quot;SENDERS_LINKS&quot;, &apos;&apos;);&#xd;
+		    parametros.put(&quot;DESCRIPTION&quot;, &apos;&apos;);&#xd;
+		    parametros.put(&quot;LINK&quot;,url);&#xd;
+		    var assunto = i18n.translate(&quot;assunto&quot;);&#xd;
+		    assunto = assunto + &apos; &apos; +COD_solicitacao;&#xd;
+		    //Este par�metro � obrigat�rio e representa o assunto do e-mail&#xd;
+		    parametros.put(&quot;subject&quot;, assunto);&#xd;
+		 &#xd;
+		    //Monta lista de destinat�rios&#xd;
+		    var destinatarios = new java.util.ArrayList();&#xd;
+		    destinatarios.add(user.toString());&#xd;
+		 &#xd;
+		    //Envia e-mail&#xd;
+		    notifier.notify(&quot;admin&quot;, &quot;DEFAULT_EMAIL_NOTIFICATION&quot;, parametros, destinatarios, &quot;text/html&quot;);&#xd;
+		 &#xd;
+		} catch(e){&#xd;
+		    log.info(e);&#xd;
+		}&#xd;
+	}&#xd;
+	&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>ENG_LITERALS</eventId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>process.description=Envio de Documento com PO / Document Delivery Request w/ PO&#xd;
+process.category=Financeiro&#xd;
+process.instructions=&#xd;
+process.version.instructions=Nova Versão.&#xd;
+1.name=Pagamento com PO&#xd;
+2.name=Financeiro&#xd;
+3.name=Fiscal&#xd;
+4.name=Solicitante&#xd;
+4.instructions=&#xd;
+5.name=Processamento Central de Notas&#xd;
+5.instructions=&#xd;
+9.name=Fim&#xd;
+9.instructions=Atividade final do processo&#xd;
+11.name=Dispara E-mail para o Solicitante, informando que a solicitação está em andamento&#xd;
+14.name=Serviço?&#xd;
+16.name=Processamento Fiscal - Serviço&#xd;
+16.instructions=&#xd;
+17.name=S&#xd;
+17.flow=&#xd;
+17.return=&#xd;
+19.name=Verificar Negativa&#xd;
+19.instructions=&#xd;
+21.name=&#xd;
+21.flow=&#xd;
+21.return=&#xd;
+22.name=S/N&#xd;
+23.name=&#xd;
+23.flow=&#xd;
+23.return=&#xd;
+24.name=&#xd;
+24.flow=&#xd;
+24.return=&#xd;
+26.name=&#xd;
+26.flow=&#xd;
+26.return=&#xd;
+27.name=S/N&#xd;
+28.name=&#xd;
+28.flow=&#xd;
+28.return=&#xd;
+29.name=&#xd;
+29.flow=&#xd;
+29.return=&#xd;
+30.name=&#xd;
+30.flow=&#xd;
+30.return=&#xd;
+31.name=Processamento Fiscal - Produto&#xd;
+31.instructions=&#xd;
+32.name=N&#xd;
+32.flow=&#xd;
+32.return=&#xd;
+33.name=S/N&#xd;
+34.name=&#xd;
+34.flow=&#xd;
+34.return=&#xd;
+35.name=&#xd;
+35.flow=&#xd;
+35.return=&#xd;
+36.name=&#xd;
+36.flow=&#xd;
+36.return=&#xd;
+37.name=Reverso&#xd;
+38.name=N&#xd;
+38.flow=&#xd;
+38.return=&#xd;
+39.name=Preencher Dados&#xd;
+39.instructions=&#xd;
+40.name=s&#xd;
+40.flow=&#xd;
+40.return=&#xd;
+41.name=Aceita&#xd;
+42.name=&#xd;
+42.flow=&#xd;
+42.return=&#xd;
+43.name=s&#xd;
+43.flow=&#xd;
+43.return=&#xd;
+48.name=&#xd;
+48.flow=&#xd;
+48.return=&#xd;
+50.name=Ajustar Informações&#xd;
+50.instructions=&#xd;
+51.name=N&#xd;
+51.flow=&#xd;
+51.return=&#xd;
+52.name=&#xd;
+52.flow=&#xd;
+52.return=</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>ESP_LITERALS</eventId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>process.description=Envio de Documento com PO / Document Delivery Request w/ PO&#xd;
+process.category=Financeiro&#xd;
+process.instructions=&#xd;
+process.version.instructions=Nova Versão.&#xd;
+1.name=Pagamento com PO&#xd;
+2.name=Financeiro&#xd;
+3.name=Fiscal&#xd;
+4.name=Solicitante&#xd;
+4.instructions=&#xd;
+5.name=Processamento Central de Notas&#xd;
+5.instructions=&#xd;
+9.name=Fim&#xd;
+9.instructions=Atividade final do processo&#xd;
+11.name=Dispara E-mail para o Solicitante, informando que a solicitação está em andamento&#xd;
+14.name=Serviço?&#xd;
+16.name=Processamento Fiscal - Serviço&#xd;
+16.instructions=&#xd;
+17.name=S&#xd;
+17.flow=&#xd;
+17.return=&#xd;
+19.name=Verificar Negativa&#xd;
+19.instructions=&#xd;
+21.name=&#xd;
+21.flow=&#xd;
+21.return=&#xd;
+22.name=S/N&#xd;
+23.name=&#xd;
+23.flow=&#xd;
+23.return=&#xd;
+24.name=&#xd;
+24.flow=&#xd;
+24.return=&#xd;
+26.name=&#xd;
+26.flow=&#xd;
+26.return=&#xd;
+27.name=S/N&#xd;
+28.name=&#xd;
+28.flow=&#xd;
+28.return=&#xd;
+29.name=&#xd;
+29.flow=&#xd;
+29.return=&#xd;
+30.name=&#xd;
+30.flow=&#xd;
+30.return=&#xd;
+31.name=Processamento Fiscal - Produto&#xd;
+31.instructions=&#xd;
+32.name=N&#xd;
+32.flow=&#xd;
+32.return=&#xd;
+33.name=S/N&#xd;
+34.name=&#xd;
+34.flow=&#xd;
+34.return=&#xd;
+35.name=&#xd;
+35.flow=&#xd;
+35.return=&#xd;
+36.name=&#xd;
+36.flow=&#xd;
+36.return=&#xd;
+37.name=Reverso&#xd;
+38.name=N&#xd;
+38.flow=&#xd;
+38.return=&#xd;
+39.name=Preencher Dados&#xd;
+39.instructions=&#xd;
+40.name=s&#xd;
+40.flow=&#xd;
+40.return=&#xd;
+41.name=Aceita&#xd;
+42.name=&#xd;
+42.flow=&#xd;
+42.return=&#xd;
+43.name=s&#xd;
+43.flow=&#xd;
+43.return=&#xd;
+48.name=&#xd;
+48.flow=&#xd;
+48.return=&#xd;
+50.name=Ajustar Informações&#xd;
+50.instructions=&#xd;
+51.name=N&#xd;
+51.flow=&#xd;
+51.return=&#xd;
+52.name=&#xd;
+52.flow=&#xd;
+52.return=</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>POR_LITERALS</eventId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>process.description=Envio de Documento com PO / Document Delivery Request w/ PO&#xd;
+process.category=Financeiro&#xd;
+process.instructions=&#xd;
+process.version.instructions=Nova Versão.&#xd;
+1.name=Pagamento com PO&#xd;
+2.name=Financeiro&#xd;
+3.name=Fiscal&#xd;
+4.name=Solicitante&#xd;
+4.instructions=&#xd;
+5.name=Processamento Central de Notas&#xd;
+5.instructions=&#xd;
+9.name=Fim&#xd;
+9.instructions=Atividade final do processo&#xd;
+11.name=Dispara E-mail para o Solicitante, informando que a solicitação está em andamento&#xd;
+14.name=Serviço?&#xd;
+16.name=Processamento Fiscal - Serviço&#xd;
+16.instructions=&#xd;
+17.name=S&#xd;
+17.flow=&#xd;
+17.return=&#xd;
+19.name=Verificar Negativa&#xd;
+19.instructions=&#xd;
+21.name=&#xd;
+21.flow=&#xd;
+21.return=&#xd;
+22.name=S/N&#xd;
+23.name=&#xd;
+23.flow=&#xd;
+23.return=&#xd;
+24.name=&#xd;
+24.flow=&#xd;
+24.return=&#xd;
+26.name=&#xd;
+26.flow=&#xd;
+26.return=&#xd;
+27.name=S/N&#xd;
+28.name=&#xd;
+28.flow=&#xd;
+28.return=&#xd;
+29.name=&#xd;
+29.flow=&#xd;
+29.return=&#xd;
+30.name=&#xd;
+30.flow=&#xd;
+30.return=&#xd;
+31.name=Processamento Fiscal - Produto&#xd;
+31.instructions=&#xd;
+32.name=N&#xd;
+32.flow=&#xd;
+32.return=&#xd;
+33.name=S/N&#xd;
+34.name=&#xd;
+34.flow=&#xd;
+34.return=&#xd;
+35.name=&#xd;
+35.flow=&#xd;
+35.return=&#xd;
+36.name=&#xd;
+36.flow=&#xd;
+36.return=&#xd;
+37.name=Reverso&#xd;
+38.name=N&#xd;
+38.flow=&#xd;
+38.return=&#xd;
+39.name=Preencher Dados&#xd;
+39.instructions=&#xd;
+40.name=s&#xd;
+40.flow=&#xd;
+40.return=&#xd;
+41.name=Aceita&#xd;
+42.name=&#xd;
+42.flow=&#xd;
+42.return=&#xd;
+43.name=s&#xd;
+43.flow=&#xd;
+43.return=&#xd;
+48.name=&#xd;
+48.flow=&#xd;
+48.return=&#xd;
+50.name=Ajustar Informações&#xd;
+50.instructions=&#xd;
+51.name=N&#xd;
+51.flow=&#xd;
+51.return=&#xd;
+52.name=&#xd;
+52.flow=&#xd;
+52.return=</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>intermediateconditional53</eventId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function intermediateconditional53() {&#xd;
+&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
+  <list/>
+  <list>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>454</height>
+      <width>1211</width>
+      <positionX>0</positionX>
+      <positionY>0</positionY>
+      <stateName>Pagamento com PO</stateName>
+      <type>1</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>1</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>408080</color>
+      <height>151</height>
+      <width>1181</width>
+      <positionX>30</positionX>
+      <positionY>0</positionY>
+      <stateName>Financeiro</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>82b0b7</color>
+      <height>152</height>
+      <width>1181</width>
+      <positionX>30</positionX>
+      <positionY>302</positionY>
+      <stateName>Fiscal</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>3</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>C0C0C0</color>
+      <height>151</height>
+      <width>1181</width>
+      <positionX>30</positionX>
+      <positionY>151</positionY>
+      <stateName>Solicitante</stateName>
+      <type>2</type>
+      <parentSequence>1</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </swimLanePK>
+    </SwimLane>
+  </list>
+  <list>
+    <ProcessComponGraf>
+      <componType>1</componType>
+      <positionX>940</positionX>
+      <positionY>340</positionY>
+      <processComponGrafPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <componGrafSequence>11</componGrafSequence>
+      </processComponGrafPK>
+      <stateName>Dispara E-mail para o Solicitante, informando que a solicitação está em andamento</stateName>
+    </ProcessComponGraf>
+  </list>
+  <list>
+    <ProcessLinkAssoc>
+      <processLinkAssocPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>1</version>
+        <linkSequence>12</linkSequence>
+      </processLinkAssocPK>
+      <initialStateSequence>11</initialStateSequence>
+      <finalStateSequence>5</finalStateSequence>
+    </ProcessLinkAssoc>
+  </list>
+  <list>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>3</version>
+        <linkSequence>17</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>370</positionX>
+      <positionY>411</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>3</version>
+        <linkSequence>21</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>452</positionX>
+      <positionY>42</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>3</version>
+        <linkSequence>26</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>1060</positionX>
+      <positionY>42</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>3</version>
+        <linkSequence>29</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>792</positionX>
+      <positionY>413</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>3</version>
+        <linkSequence>30</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>912</positionX>
+      <positionY>413</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>3</version>
+        <linkSequence>32</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>370</positionX>
+      <positionY>331</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>3</version>
+        <linkSequence>35</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>792</positionX>
+      <positionY>335</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>3</version>
+        <linkSequence>36</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>652</positionX>
+      <positionY>228</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>3</version>
+        <linkSequence>51</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>132</positionX>
+      <positionY>272</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <version>3</version>
+        <linkSequence>53</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>1059</positionX>
+      <positionY>103</positionY>
+    </ProcessLinkBend>
+  </list>
+  <list/>
+  <list/>
+  <list>
+    <ProcessFormField>
+      <processFormFieldPK>
+        <companyId>1</companyId>
+        <processId>ctgRecebimentoFinanceiroPO_10359</processId>
+        <fieldId>nfCod</fieldId>
+      </processFormFieldPK>
+      <fieldDescription>nfCod</fieldDescription>
+      <slotId>1</slotId>
+    </ProcessFormField>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+</list>

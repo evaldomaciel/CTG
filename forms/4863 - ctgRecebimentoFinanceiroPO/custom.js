@@ -10,13 +10,16 @@ var final9 = 9;
 $(document).ready(function () {
 
 	var view = $('#WKMode').val();
-	console.log("view: " +  view);
+	console.log("view: " + view);
 	var atividade = parseInt($('#campo_processo').val());
 	if (atividade == ajustarInfos) {
-		atividade = inicio;	}
+		atividade = inicio;
+	}
 	$('#ErroRecebData').hide();
 	$('#ErroVencData').hide();
 	$('#ErroEmissData').hide();
+	$('#tipoNota').hide();
+	$('#NrPreNota').hide();
 	$('#ErroForn').hide();
 	$('#RecebData').mask('99/99/9999');
 	$('#VencData').mask('99/99/9999');
@@ -34,32 +37,46 @@ $(document).ready(function () {
 
 	$('#lembrete').hide();
 	$('#btZoomPass').hide();
-	$('#VencData').on('change', function () {
-		var data = $(this).val().split('/');
-		data = new Date(data[2], data[1] - 1, data[0]);
-		EmissData.setMaxDate(data);
-	});
-	$('#EmissData').on('change', function () {
-		var data = $(this).val().split('/');
-		data = new Date(data[2], data[1] - 1, data[0]);
-		vencData.setMinDate(data);
-	});
 
-	var mySimpleCalendar = FLUIGC.calendar('.competencia');
-	FLUIGC.calendar.formatDate(new Date(), 'DD/MM/YYYY', 'pt');
-
-	$("#competencia").on("change", function(){
-		var competenciaA = $("#competencia").val().split('/');
-		setTimeout(() => {
-			$("#competencia").val(competenciaA[1] + "/" + competenciaA[2]);			
-		}, 300);
-	});
+	setTimeout(() => {
+		visibilidadeTipo();
+	}, 300);
 
 	if (view != "VIEW") {
+		$('#VencData').on('change', function () {
+			var data = $(this).val().split('/');
+			data = new Date(data[2], data[1] - 1, data[0]);
+			EmissData.setMaxDate(data);
+		});
+		$('#EmissData').on('change', function () {
+			var data = $(this).val().split('/');
+			data = new Date(data[2], data[1] - 1, data[0]);
+			vencData.setMinDate(data);
+		});
 
-		var recebData = FLUIGC.calendar('#RecebData');
-		var vencData = FLUIGC.calendar('#VencData');
-		var EmissData = FLUIGC.calendar('#EmissData');
+		$("#competencia").on("change", function () {
+			var competenciaA = $("#competencia").val().split('/');
+			setTimeout(() => {
+				$("#competencia").val(competenciaA[1] + "/" + competenciaA[2]);
+			}, 300);
+		});
+
+		$("[name=rb_tipoPgmto]").on('change', function () {
+			visibilidadeTipo();
+		});
+		
+		$("[name=tipoNota]").on('change', function () {
+			visibilidadePreNota();
+		});
+
+
+		FLUIGC.calendar('.competencia');
+		FLUIGC.calendar('#RecebData');
+		FLUIGC.calendar('#VencData');
+		FLUIGC.calendar('#EmissData');
+
+		FLUIGC.calendar.formatDate(new Date(), 'DD/MM/YYYY', 'pt');
+
 		$('#codFilial').on('change', function () {
 			$('#cCentroCusto').val('');
 			$('#descCentroCusto').val('');
@@ -164,11 +181,11 @@ $(document).ready(function () {
 		$('#lembrete').hide();
 		$('#btZoomEmpresa').hide();
 		$('#btZoomFornecedor').hide();
-		if ($('#_rb_tipoPgmto_serv').is(':checked') == true || $('#rb_tipoPgmto_serv').is(':checked')  == true) {
+		if ($('#_rb_tipoPgmto_serv').is(':checked') == true || $('#rb_tipoPgmto_serv').is(':checked') == true) {
 			console.log("_rb_tipoPgmto_serv == true");
 			$('#taxVerif').show();
-			if ($('#rb_retencao_sim').is(':checked')  == true || $('#_rb_retencao_sim').is(':checked')  == true &&
-				$('#_rb_aprovaFiscal_sim').is(':checked')  == true || $('#rb_aprovaFiscal_sim').is(':checked')  == true) {
+			if ($('#rb_retencao_sim').is(':checked') == true || $('#_rb_retencao_sim').is(':checked') == true &&
+				$('#_rb_aprovaFiscal_sim').is(':checked') == true || $('#rb_aprovaFiscal_sim').is(':checked') == true) {
 				$('#retencoesImpostos').show();
 			}
 		}
@@ -289,23 +306,7 @@ $(document).ready(function () {
 	if (atividade == inicio && isReverso())
 		handleReverseReturn();
 
-
 	$('[name=rb_acptSol]:checked').change();
-
-	
-	 $("input:radio[name=rb_tipoPgmto]:checked").on("change", function () {
-		
-		if($('#rb_tipoPgmto_serv').is(':checked')) {
-			console.log("Serviço");
-		}
-		
-
-		if($('#rb_tipoPgmto_prod').is(':checked')) {
-			console.log("Produto");
-		}
-		
-	});
-
 
 	$("#valLiquidoNF").val($("#ValTitulo").val());
 	$("#valLiquidoNF").val($("#ValTitulo").val());
@@ -502,4 +503,29 @@ function data(valor, tipo) {
 		var novaData = String(ano) + "/" + String(mes) + "/" + String(dia);
 	}
 	return novaData;
+}
+
+
+function visibilidadeTipo() {
+	if ($('#_rb_tipoPgmto_prod').is(':checked') == true || $('#rb_tipoPgmto_prod').is(':checked') == true) {
+		$("#servicoPrestado").hide();
+		$("#produtoRecebido").show();
+		$("#tipoNota").show();
+		visibilidadePreNota();
+	}
+
+	if ($('#_rb_tipoPgmto_serv').is(':checked') == true || $('#rb_tipoPgmto_serv').is(':checked') == true) {
+		$("#servicoPrestado").show();
+		$("#produtoRecebido").hide();
+		$("#tipoNota").hide();
+
+	}
+}
+
+function visibilidadePreNota() {
+	if ($('#_tipoNota_sim').is(':checked') == true || $('#tipoNota_sim').is(':checked') == true) {
+		$("#NrPreNota").show();
+	} else {
+		$("#NrPreNota").hide();
+	}
 }

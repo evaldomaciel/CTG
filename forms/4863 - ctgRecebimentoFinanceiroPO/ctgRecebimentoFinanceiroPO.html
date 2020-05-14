@@ -331,7 +331,7 @@
 															i18n.translate("erroData").
 														</div>
 													</div>
-													
+
 													<div class='form-group'>
 														<label for="ValTitulo">Valor / Value</label>
 														<br><input type="text" name="ValTitulo" id="ValTitulo"
@@ -346,6 +346,27 @@
 																name="rb_tipoPgmto" id='rb_tipoPgmto_prod'
 																value='prod'>Produto</label>
 													</div>
+
+													<div id="tipoNota" style="display: block;">
+														<label for="tipoNota">Pré-nota / Pre-note</label>
+														<div class="form-group" id="tipoNota">
+															<label for="tipoNota" class="radio-inline">
+																<input type="radio" name="tipoNota" id="tipoNota_sim" value="Sim">
+																Sim / Yes
+															</label>
+															<label class="radio-inline">
+																<input type="radio" name="tipoNota" id="tipoNota_nao" value="Nao">
+																Não / No
+															</label>
+														</div>
+														<div class="form-group" id="NrPreNota">
+															<label for="NrPreNota">NF Pré-nota / Pre-note Invoice</label>
+															<br><input type="text" name="NrPreNota" id="NrPreNota"
+																class="form-control" onkeydown='onlyNumber(this)'
+																onkeyup='onlyNumber(this)' /></br>
+														</div>
+													</div>
+
 													<div class='alert alert-warning sol' id='lembrete'>
 														<p>Lembre-se de anexar a nota fiscal desse pagamento</p>
 														<p>Don't forget to attach the invoice or related document</p>
@@ -404,13 +425,13 @@
 													<input type="text" name="nomeTax" id="nomeTax" class="form-control"
 														readonly='readonly' />
 												</div>
-												
+
 												<div class='form-group'>
 													<label for="competencia">i18n.translate("competencia")</label>
 													<br><input type="text" name="competencia" id="competencia"
-														class="form-control competencia"   /></br>
+														class="form-control competencia" /></br>
 												</div>
-												
+
 												<div class='col-md-6 col-xs-6'>
 													<label for="rb_aprovaFiscal">Aprova? / Approves?</label>
 												</div>
@@ -459,7 +480,7 @@
 														<input type="text" name="codRecIR" id="codRecIR"
 															class="maskValor form-control" />
 													</div>
-													<div class='form-group' id="aliqIRRF" >
+													<div class='form-group' id="aliqIRRF">
 														<label for="aliqIRRF">Alíquota IRRF</label>
 														<input type="text" name="aliqIRRF" id="aliqIRRF"
 															class="maskValor form-control" />
@@ -520,7 +541,7 @@
 														<label for="cINSS">INSS</label>
 														<input type="text" name="cINSS" id="cINSS"
 															class="maskValor form-control" />
-													</div>													
+													</div>
 													<div class='form-group'>
 														<label for="cod1162003">Código 116/2003</label>
 														<input type="text" name="cod1162003" id="cod1162003"

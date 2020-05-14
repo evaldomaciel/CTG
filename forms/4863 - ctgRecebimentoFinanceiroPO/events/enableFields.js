@@ -26,6 +26,8 @@ function enableFields(form) {
 	form.setEnabled("obsRecebimento", (activity == inicio));
 	form.setEnabled("cOcCod", (activity == inicio));
 	form.setEnabled("rb_tipoPgmto", (activity == inicio));
+	form.setEnabled("tipoNota", (activity == inicio));
+	form.setEnabled("NrPreNota", (activity == inicio));
 	form.setEnabled("nfCod", (activity == inicio));
 	form.setEnabled('rb_sentido', (activity == inicio));
 
